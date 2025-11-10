@@ -1,0 +1,42 @@
+﻿<!-- options.html (обновлённый) -->
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Настройки PiP Helper</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<h1>Настройки PiP Helper</h1>
+
+<form id="form" autocomplete="off">
+    <fieldset>
+        <legend>Поведение</legend>
+        <label>
+            <input type="checkbox" id="autoPiP" aria-describedby="autoPiPHelp">
+            Авто‑PiP при переключении вкладки
+        </label>
+        <p id="autoPiPHelp" class="help">Когда вкладка становится неактивной, видео переводится в режим PiP.</p>
+
+        <label>
+            <input type="checkbox" id="showCompanion" aria-describedby="showCompanionHelp">
+            Показывать кнопку Companion App
+        </label>
+        <p id="showCompanionHelp" class="help">Опционально: открывать текущую страницу в приложении‑компаньоне.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Чёрный список доменов</legend>
+        <p class="help">Введите домены через запятую. На этих сайтах кнопка PiP и авто‑PiP будут отключены.</p>
+        <textarea id="blacklist" rows="6" placeholder="пример: youtube.com, example.org"></textarea>
+    </fieldset>
+
+    <div class="actions">
+        <button id="save" type="button">Сохранить</button>
+        <span id="status" aria-live="polite"></span>
+    </div>
+</form>
+
+<script src="options.js"></script>
+</body>
+</html>

@@ -5,4 +5,9 @@
     <File Path="styles.css" />
   </Folder>
   <Folder Name="/EdgeExtPIP/assets/" />
+  <Folder Name="/EdgeExtPIP/options/">
+    <File Path="options.css" />
+    <File Path="options.html" />
+    <File Path="options.js" />
+  </Folder>
 </Solution>
