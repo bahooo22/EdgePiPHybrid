@@ -1,3 +1,42 @@
-﻿body
-{
+body {
+/* styles.css */
+.pip-helper-btn {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform 120ms ease, background 120ms ease;
+}
+
+.pip-helper-btn:hover {
+    background: rgba(0,0,0,0.75);
+    transform: scale(1.06);
+}
+
+.pip-helper-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+/* Вариант для светлой темы — если хотите динамику, можно переключать классом */
+:root.light .pip-helper-btn {
+    background: rgba(255,255,255,0.7);
+}
+
+:root.light .pip-helper-btn svg {
+    fill: #111;
+}
+/* Скрыта, когда видео уже в PiP */
+.pip-hidden {
+    display: none !important;
+}
 }

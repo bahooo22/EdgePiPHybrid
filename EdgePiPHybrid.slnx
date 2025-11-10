@@ -1,13 +1,17 @@
 <Solution>
   <Folder Name="/EdgeExtPIP/">
-    <File Path="content.js" />
-    <File Path="manifest.json" />
-    <File Path="styles.css" />
+    <File Path="EdgeExtPIP/content.js" />
+    <File Path="EdgeExtPIP/manifest.json" />
+    <File Path="EdgeExtPIP/styles.css" />
   </Folder>
-  <Folder Name="/EdgeExtPIP/assets/" />
+  <Folder Name="/EdgeExtPIP/assets/">
+    <File Path="EdgeExtPIP/assets/icon128.png" />
+    <File Path="EdgeExtPIP/assets/icon16.png" />
+    <File Path="EdgeExtPIP/assets/icon48.png" />
+  </Folder>
   <Folder Name="/EdgeExtPIP/options/">
-    <File Path="options.css" />
-    <File Path="options.html" />
-    <File Path="options.js" />
+    <File Path="EdgeExtPIP/options/options.css" />
+    <File Path="EdgeExtPIP/options/options.html" />
+    <File Path="EdgeExtPIP/options/options.js" />
   </Folder>
 </Solution>
